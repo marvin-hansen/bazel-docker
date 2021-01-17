@@ -5,7 +5,7 @@
 load("@io_bazel_rules_docker//container:container.bzl", "container_image")
 container_image(
     name = "swift_build",
-    base = "@swift_linux//image",
+    base = "@swift//image",
     cmd = ["Hello SwiftWorld!"],
     entrypoint = ["echo"],
 )

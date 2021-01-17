@@ -47,13 +47,31 @@ container_pull(
     tag = "3.13.0",
 )
 
+# docker pull debian:buster-slim
+# https://hub.docker.com/_/debian
+container_pull(
+    name = "debian_slim",
+    registry = "index.docker.io",
+    repository = "library/debian",
+    tag = "buster-slim",
+)
+
 # docker pull swift:5.3.2-xenial
 # https://hub.docker.com/_/swift
 container_pull(
-    name = "swift_linux",
+    name = "swift",
     registry = "index.docker.io",
     repository = "library/swift",
     tag = "5.3.2-xenial",
+)
+
+# docker pull swift:5.3.2-xenial-slim
+# https://hub.docker.com/_/swift
+container_pull(
+    name = "swift_slim",
+    registry = "index.docker.io",
+    repository = "library/swift",
+    tag = "5.3.2-xenial-slim",
 )
 
 ################################################################################
