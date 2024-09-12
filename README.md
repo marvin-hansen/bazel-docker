@@ -1,7 +1,5 @@
-# bazel-docker
+# Bazel Rust Examples have MOVED:
 
-Build container images with bazel instead of docker. 
+https://github.com/bazelbuild/examples/tree/main/rust-examples#examples-to-build-rust-code
 
-## Usage
-
-  
+This repo is no longer maintained; Please use the link above to find current and working Bazel Rust examples including building OCI images. 
